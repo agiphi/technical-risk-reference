@@ -34,3 +34,14 @@ python -m src.main
 - easy extension with additional scanners
 
 The system is a technical reference, not an investment decision engine.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  A[Target Repository] --> B[Static Signals]
+  B --> C[Architecture Signals]
+  C --> D[Infrastructure Signals]
+  D --> E[Deterministic Classifier]
+  E --> F[Structured Report]
+```
